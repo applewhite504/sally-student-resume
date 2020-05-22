@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sally Student Resume</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id = "application-root"></div>
+
+    <script
+        src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <script
+        src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+    <script
+        src="https://unpkg.com/babel-standalone@6/babel.min.js">
+    </script>
+
+
+      
+
+  <script type="text/babel"> 
+    function App(props) {
+      return (
+        <div id="wrapper">
+          <header>
+            <h1>{props.name}</h1>
+            <h2>Resume</h2>
+            <address>
+              <a href="mailto:sallystudent@gmail.com">sallystudent@gmail.com</a>
+              <p>Phone Number: 555-555-5555</p> 
+            </address>
+          </header>
+          <main>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt="Picture of Sally with arms crossed." />
+            <section>
+            <h3>Education</h3>
+            <p>Yale University: 2005-2009</p>
+            <p>Bachelor of Science, Computer Science</p>
+            </section>
+          <section>
+            <h3>Employment History</h3>
+            <div>
+                <p>Mitre Corporation | Transportation System Communicator</p>
+                <p>2018-Present</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div>
+                <p>First Data Corp | Intern</p>
+                <p>2016-2018</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </section>
+        </main>
+      </div>
+    );
+  }
+  
+  ReactDOM.render(
+        <App className='my-class' name="Sally Student">
+          <h1>Current Page Title!</h1>
+        </App>,
+        document.querySelector('#application-root')
+      );
+    </script>
+</body>
+</html>
+  
+    
+  
+  
+  
+  
+  
+
+   
+
+
+
+
+    
